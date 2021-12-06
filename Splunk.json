@@ -1,0 +1,72 @@
+{
+    "type": "bundle",
+    "id": "bundle--f125d08f-0a1d-4475-9c80-9b5d64cb5c99",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--57f499f2-9320-4342-a31c-59885c623ee2",
+            "created": "2021-10-21T16:39:15.155Z",
+            "modified": "2021-10-21T16:39:15.155Z",
+            "name": "splunk",
+            "identity_class": "system"
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--8fec2620-4ec9-4d7e-ab0b-8fbba7f1b9d1",
+            "created": "2021-10-21T16:39:15.157Z",
+            "modified": "2021-10-21T16:39:15.157Z",
+            "first_observed": "2021-10-21T11:40:20.998224Z",
+            "last_observed": "2021-10-21T11:40:20.998224Z",
+            "number_observed": 6,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.0"
+                },
+                "1": {
+                    "type": "url",
+                    "value": "http://malw.wxi.dwnld.serveftp.com/"
+                },
+                "2": {
+                    "type": "domain-name",
+                    "value": "malw.wxi.dwnld.serveftp.com"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "110.55.6.109"
+                },
+                "4": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "dst_ref": "3",
+                    "src_port": 63996,
+                    "dst_port": 80,
+                    "protocols": [
+                        "http"
+                    ]
+                },
+                "5": {
+                    "type": "x-oca-event",
+                    "action": "ACCEPT",
+                    "host_ref": [
+                        "6"
+                    ],
+                    "ip_refs": [
+                        "0",
+                        "3"
+                    ],
+                    "network_ref": "4"
+                },
+                "6": {
+                    "type": "x-oca-asset",
+                    "hostname": "workstation1.sg2.local",
+                    "ip_refs": [
+                        "0",
+                        "3"
+                    ]
+                }
+            }
+        }
+    ]
+}

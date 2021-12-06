@@ -1,0 +1,315 @@
+{
+    "type": "bundle",
+    "id": "bundle--cd6b02f4-89ad-4f3c-8de3-b2a69c4a1b90",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--59767f66-e20d-43f2-a529-d36c24d67044",
+            "created": "2021-10-21T16:39:15.082Z",
+            "modified": "2021-10-21T16:39:15.082Z",
+            "name": "guardium",
+            "identity_class": "system"
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--f9edea55-7b42-440f-b21a-9061fe3160c8",
+            "created": "2021-10-21T16:39:15.084Z",
+            "modified": "2021-10-21T16:39:15.084Z",
+            "first_observed": "2021-10-21T11:40:23.008368Z",
+            "last_observed": "2021-10-21T11:40:23.008368Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "x-ibm-finding",
+                    "dst_device": "ORACLEXE",
+                    "details": "select * CREDIT_CARDS",
+                    "name": "Unauthorized Clients access to Personal Data Sensitive Objects - Alert Per Match",
+                    "finding_type": "Policy Violation",
+                    "src_database_user_ref": "2",
+                    "src_ip_ref": "3",
+                    "src_application_ref": "4",
+                    "dst_ip_ref": "5",
+                    "dst_application_ref": "6",
+                    "source": "collector1.gdemo.com"
+                },
+                "1": {
+                    "type": "x-guardium",
+                    "severity": "Medium"
+                },
+                "2": {
+                    "type": "user-account",
+                    "user_id": "jane"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.1",
+                    "resolves_to_refs": [
+                        "7"
+                    ]
+                },
+                "4": {
+                    "type": "software",
+                    "name": "SQLPLUS"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.3"
+                },
+                "6": {
+                    "type": "software",
+                    "name": "ORACLE"
+                },
+                "7": {
+                    "type": "mac-addr",
+                    "value": "CC:46:D6:36:1c:4a"
+                },
+                "8": {
+                    "type": "x-oca-event",
+                    "action": "Data exfiltration to unsanctioned apps",
+                    "host_ref_x": [
+                        "9"
+                    ],
+                    "ip_refs_x": [
+                        "3",
+                        "5"
+                    ],
+                    "network_ref_x": "4"
+                },
+                "9": {
+                    "type": "x-oca-asset",
+                    "hostname": "workstation2.sg2.local",
+                    "ip_refs_x": [
+                        "3",
+                        "5"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--ed9bf486-5c7d-4b4d-b77c-89dded9fcd1b",
+            "created": "2021-10-21T16:39:15.087Z",
+            "modified": "2021-10-21T16:39:15.087Z",
+            "first_observed": "2021-10-21T11:41:13.008436Z",
+            "last_observed": "2021-10-21T11:41:13.008436Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "x-ibm-finding",
+                    "dst_device": "ORACLEXE",
+                    "details": "select * CREDIT_SCORES",
+                    "name": "Unauthorized Clients access to Personal Data Sensitive Objects - Alert Per Match",
+                    "finding_type": "Policy Violation",
+                    "src_database_user_ref": "2",
+                    "src_ip_ref": "3",
+                    "src_application_ref": "4",
+                    "dst_ip_ref": "5",
+                    "dst_application_ref": "6",
+                    "source": "collector1.gdemo.com"
+                },
+                "1": {
+                    "type": "x-guardium",
+                    "severity": "Medium"
+                },
+                "2": {
+                    "type": "user-account",
+                    "user_id": "jane"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.1",
+                    "resolves_to_refs": [
+                        "7"
+                    ]
+                },
+                "4": {
+                    "type": "software",
+                    "name": "SQLPLUS"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.3"
+                },
+                "6": {
+                    "type": "software",
+                    "name": "ORACLE"
+                },
+                "7": {
+                    "type": "mac-addr",
+                    "value": "CC:46:D6:36:1c:4a"
+                },
+                "8": {
+                    "type": "x-oca-event",
+                    "action": "Data exfiltration to unsanctioned apps",
+                    "host_ref_x": [
+                        "9"
+                    ],
+                    "ip_refs_x": [
+                        "3",
+                        "5"
+                    ],
+                    "network_ref_x": "4"
+                },
+                "9": {
+                    "type": "x-oca-asset",
+                    "hostname": "workstation2.sg2.local",
+                    "ip_refs_x": [
+                        "3",
+                        "5"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--910ce871-01b4-43f9-afc5-c9c28105ca8a",
+            "created": "2021-10-21T16:39:15.090Z",
+            "modified": "2021-10-21T16:39:15.090Z",
+            "first_observed": "2021-10-21T11:41:30.008491Z",
+            "last_observed": "2021-10-21T11:41:30.008491Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "x-ibm-finding",
+                    "dst_device": "ORACLEXE",
+                    "details": "select * CONTACT_INFO",
+                    "name": "Unauthorized Clients access to Personal Data Sensitive Objects - Alert Per Match",
+                    "finding_type": "Policy Violation",
+                    "src_database_user_ref": "2",
+                    "src_ip_ref": "3",
+                    "src_application_ref": "4",
+                    "dst_ip_ref": "5",
+                    "dst_application_ref": "6",
+                    "source": "collector1.gdemo.com"
+                },
+                "1": {
+                    "type": "x-guardium",
+                    "severity": "Medium"
+                },
+                "2": {
+                    "type": "user-account",
+                    "user_id": "jane"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.1",
+                    "resolves_to_refs": [
+                        "7"
+                    ]
+                },
+                "4": {
+                    "type": "software",
+                    "name": "SQLPLUS"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.3"
+                },
+                "6": {
+                    "type": "software",
+                    "name": "ORACLE"
+                },
+                "7": {
+                    "type": "mac-addr",
+                    "value": "CC:46:D6:36:1c:4a"
+                },
+                "8": {
+                    "type": "x-oca-event",
+                    "action": "Data exfiltration to unsanctioned apps",
+                    "host_ref_x": [
+                        "9"
+                    ],
+                    "ip_refs_x": [
+                        "3",
+                        "5"
+                    ],
+                    "network_ref_x": "4"
+                },
+                "9": {
+                    "type": "x-oca-asset",
+                    "hostname": "workstation2.sg2.local",
+                    "ip_refs_x": [
+                        "3",
+                        "5"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--2e624c11-1a7b-454d-957f-62f4076fe62b",
+            "created": "2021-10-21T16:39:15.093Z",
+            "modified": "2021-10-21T16:39:15.093Z",
+            "first_observed": "2021-10-21T11:42:15.008544Z",
+            "last_observed": "2021-10-21T11:42:15.008544Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "x-ibm-finding",
+                    "dst_device": "ORACLEXE",
+                    "details": "clone table CREDIT_CARDS",
+                    "name": "GDPR Personal Data Admin User - Alert per match (violation) on DML and Select Commands",
+                    "finding_type": "Policy Violation",
+                    "src_database_user_ref": "2",
+                    "src_ip_ref": "3",
+                    "src_application_ref": "4",
+                    "dst_ip_ref": "5",
+                    "dst_application_ref": "6",
+                    "source": "collector1.gdemo.com"
+                },
+                "1": {
+                    "type": "x-guardium",
+                    "severity": "Low"
+                },
+                "2": {
+                    "type": "user-account",
+                    "user_id": "jane"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.1",
+                    "resolves_to_refs": [
+                        "7"
+                    ]
+                },
+                "4": {
+                    "type": "software",
+                    "name": "SQLPLUS"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "10.0.0.3"
+                },
+                "6": {
+                    "type": "software",
+                    "name": "ORACLE"
+                },
+                "7": {
+                    "type": "mac-addr",
+                    "value": "CC:46:D6:36:1c:4a"
+                },
+                "8": {
+                    "type": "x-oca-event",
+                    "action": "Data exfiltration to unsanctioned apps",
+                    "host_ref_x": [
+                        "9"
+                    ],
+                    "ip_refs_x": [
+                        "3",
+                        "5"
+                    ],
+                    "network_ref_x": "4"
+                },
+                "9": {
+                    "type": "x-oca-asset",
+                    "hostname": "workstation2.sg2.local",
+                    "ip_refs_x": [
+                        "3",
+                        "5"
+                    ]
+                }
+            }
+        }
+    ]
+}
