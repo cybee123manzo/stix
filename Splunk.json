@@ -6,18 +6,18 @@
         {
             "type": "identity",
             "id": "identity--57f499f2-9320-4342-a31c-59885c623ee2",
-            "created": "2021-10-21T16:39:15.155Z",
-            "modified": "2021-10-21T16:39:15.155Z",
+            "created": "2021-12-06T19:23:59.000Z",
+            "modified": "2021-12-06T19:23:59.000Z",
             "name": "splunk",
             "identity_class": "system"
         },
         {
             "type": "observed-data",
             "id": "observed-data--8fec2620-4ec9-4d7e-ab0b-8fbba7f1b9d1",
-            "created": "2021-10-21T16:39:15.157Z",
-            "modified": "2021-10-21T16:39:15.157Z",
-            "first_observed": "2021-10-21T11:40:20.998224Z",
-            "last_observed": "2021-10-21T11:40:20.998224Z",
+            "created": "2021-12-06T19:23:59.000Z",
+            "modified": "2021-12-06T19:23:59.000Z",
+            "first_observed": "2021-12-06T19:27:21.000000Z",
+            "last_observed": "2031-08-27T15:49:50.000000Z",
             "number_observed": 6,
             "objects": {
                 "0": {
